@@ -83,7 +83,7 @@ const Index = () => {
 
         <AnimatePresence mode="wait">
           {song ? (
-            <SongResult key="result" song={song} onReset={handleReset} />
+            <SongResult key="result" song={song} genreId={genre!} tempoId={tempo!} onReset={handleReset} />
           ) : (
             <motion.div
               key="form"
